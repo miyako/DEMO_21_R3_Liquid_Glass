@@ -1,0 +1,394 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onPrintingDetail",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"GlassAuraLeft": {
+					"type": "picture",
+					"top": -47,
+					"left": -14,
+					"width": 280,
+					"height": 190,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Glass/aura-left.svg"
+				},
+				"GlassAuraRight": {
+					"type": "picture",
+					"top": -58,
+					"left": 313,
+					"width": 260,
+					"height": 210,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Glass/aura-right.svg",
+					"sizingX": "move"
+				},
+				"FrostBand": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 559,
+					"height": 61,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Glass/frost-band.svg",
+					"sizingX": "grow"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 61,
+					"left": 0,
+					"width": 559,
+					"height": 557,
+					"class": "main-surface",
+					"bottom": 618,
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"bCancel": {
+					"type": "button",
+					"text": "􀁡",
+					"top": 15,
+					"left": 20,
+					"width": 34,
+					"height": 34,
+					"style": "custom",
+					"action": "cancel",
+					"fontSize": 24,
+					"class": "toolbar-button"
+				},
+				"bValidate": {
+					"type": "button",
+					"text": "􀁣",
+					"top": 15,
+					"left": 55,
+					"width": 34,
+					"height": 34,
+					"style": "custom",
+					"action": "accept",
+					"fontSize": 24,
+					"class": "toolbar-button"
+				},
+				"bFirstRecord": {
+					"type": "button",
+					"text": "􀓋",
+					"top": 15,
+					"left": 100,
+					"width": 34,
+					"height": 34,
+					"style": "custom",
+					"action": "firstRecord",
+					"fontSize": 24,
+					"class": "toolbar-button"
+				},
+				"bPreviousRecord": {
+					"type": "button",
+					"text": "􀁳",
+					"top": 15,
+					"left": 135,
+					"width": 34,
+					"height": 34,
+					"style": "custom",
+					"action": "previousRecord",
+					"fontSize": 24,
+					"class": "toolbar-button"
+				},
+				"bNextRecord": {
+					"type": "button",
+					"text": "􀁵",
+					"top": 15,
+					"left": 170,
+					"width": 34,
+					"height": 34,
+					"style": "custom",
+					"action": "nextRecord",
+					"fontSize": 24,
+					"class": "toolbar-button"
+				},
+				"bLastRecord": {
+					"type": "button",
+					"text": "􀓍",
+					"top": 15,
+					"left": 205,
+					"width": 34,
+					"height": 34,
+					"style": "custom",
+					"action": "lastRecord",
+					"fontSize": 24,
+					"imageHugsTitle": false,
+					"class": "toolbar-button"
+				},
+				"bPreviousRecord1": {
+					"type": "button",
+					"text": "􀎛",
+					"top": 15,
+					"left": 509,
+					"width": 39,
+					"height": 35,
+					"style": "custom",
+					"sizingX": "move",
+					"method": "ObjectMethods/bPreviousRecord1.4dm",
+					"events": [
+						"onClick"
+					],
+					"fontSize": 22,
+					"class": "toolbar-button"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "Project Name",
+					"top": 80,
+					"left": 20,
+					"width": 215,
+					"height": 16,
+					"fontWeight": "bold"
+				},
+				"Input": {
+					"type": "input",
+					"left": 20,
+					"top": 100,
+					"width": 341,
+					"height": 17,
+					"dataSource": "[Project:3]name:2",
+					"enterable": true,
+					"focusable": false,
+					"sizingX": "grow"
+				},
+				"Radio Button": {
+					"type": "radio",
+					"text": "Pending",
+					"top": 100,
+					"left": 437,
+					"width": 101,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"dataSource": "Choose:C955([Project:3]status:4=\"Pending\"; 1; 0)"
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"text": "In Progress",
+					"top": 122,
+					"left": 437,
+					"width": 101,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Choose:C955([Project:3]status:4=\"In Progress\"; 1; 0)",
+					"sizingX": "move"
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"text": "Completed",
+					"top": 144,
+					"left": 437,
+					"width": 101,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"dataSource": "Choose:C955([Project:3]status:4=\"Completed\"; 1; 0)"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Comment",
+					"top": 280,
+					"left": 20,
+					"width": 215,
+					"height": 16,
+					"fontWeight": "bold"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 20,
+					"top": 300,
+					"width": 518,
+					"height": 65,
+					"dataSource": "[Project:3]comments:8",
+					"sizingX": "grow"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Manager",
+					"top": 140,
+					"left": 20,
+					"width": 215,
+					"height": 16,
+					"fontWeight": "bold"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 20,
+					"top": 160,
+					"width": 341,
+					"height": 17,
+					"dataSource": "[Project:3]manager:3",
+					"sizingX": "grow"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Notifications enabled",
+					"top": 229,
+					"left": 20,
+					"width": 341,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "[Project:3]notificationsEnabled:5"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Client validation required",
+					"top": 207,
+					"left": 20,
+					"width": 341,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "[Project:3]clientValidationRequired:6"
+				},
+				"Thermometer": {
+					"type": "progress",
+					"left": 20,
+					"top": 405,
+					"width": 518,
+					"height": 24,
+					"max": 100,
+					"dataSource": "[Project:3]progress:7",
+					"graduationStep": 10,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"fontSize": 10,
+					"right": 538,
+					"sizingX": "grow"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Avancement",
+					"top": 385,
+					"left": 20,
+					"width": 215,
+					"height": 16,
+					"fontWeight": "bold"
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 20,
+					"top": 478,
+					"width": 518,
+					"height": 119,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "array",
+					"sizingX": "grow",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"hideExtraBlankRows": true,
+					"columns": [
+						{
+							"header": {
+								"text": "Title",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "arrTitle",
+							"width": 280
+						},
+						{
+							"header": {
+								"name": "Header3",
+								"text": "Assignee"
+							},
+							"name": "Column3",
+							"footer": {
+								"name": "Footer3"
+							},
+							"dataSource": "arrAssignee"
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "Status"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "arrStatus"
+						}
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Tasks",
+					"top": 458,
+					"left": 20,
+					"width": 215,
+					"height": 16,
+					"fontWeight": "bold"
+				}
+			},
+			"entryOrder": [
+				"Input",
+				"Input2",
+				"Check Box1",
+				"Check Box",
+				"Input1",
+				"Radio Button",
+				"Radio Button1",
+				"Radio Button2",
+				"Thermometer",
+				"List Box"
+			]
+		}
+	],
+	"geometryStamp": 157,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"markerFooter": 615,
+	"markerBreak": 615,
+	"markerBody": 615,
+	"markerHeader": 61,
+	"method": "method.4dm",
+	"formSizeAnchor": "Rectangle"
+}

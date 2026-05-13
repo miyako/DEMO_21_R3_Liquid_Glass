@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="61" viewBox="0 0 700 61">
+  <defs>
+    <linearGradient id="bandLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#f4f8ff" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="bandDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22344b" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#162338" stop-opacity="0.36"/>
+    </linearGradient>
+    <style>
+      .light { display: inline; }
+      .dark { display: none; }
+      @media (prefers-color-scheme: dark) {
+        .light { display: none; }
+        .dark { display: inline; }
+      }
+    </style>
+  </defs>
+
+  <rect class="light" x="0" y="0" width="700" height="61" fill="url(#bandLight)"/>
+  <rect class="dark" x="0" y="0" width="700" height="61" fill="url(#bandDark)"/>
+  <line class="light" x1="0" y1="1" x2="700" y2="1" stroke="#ffffff" stroke-opacity="0.95"/>
+  <line class="dark" x1="0" y1="1" x2="700" y2="1" stroke="#5f79a1" stroke-opacity="0.62"/>
+  <line class="light" x1="0" y1="60" x2="700" y2="60" stroke="#dbe5f2" stroke-opacity="0.9"/>
+  <line class="dark" x1="0" y1="60" x2="700" y2="60" stroke="#0e1520" stroke-opacity="0.48"/>
+</svg>

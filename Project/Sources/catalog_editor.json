@@ -1,0 +1,44 @@
+{
+	"tables": {
+		"Task": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 374.765625,
+				"top": 12.2890625,
+				"width": 179.71484375,
+				"height": 253.25390625
+			},
+			"displayable_fields_count": 10
+		},
+		"Project": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 47.30078125,
+				"top": 12.640625,
+				"width": 224.17578125,
+				"height": 304.80859375
+			},
+			"displayable_fields_count": 12
+		}
+	},
+	"relations": {
+		"B7A7F0E6CFBC44F2909D89D18EF414DF": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		}
+	}
+}

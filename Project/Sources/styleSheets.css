@@ -1,0 +1,58 @@
+/* ============================================================
+   DemoLiquidGlass — Form Stylesheet
+   Supports: prefers-color-scheme (light/dark)
+   ============================================================ */
+
+@media (prefers-color-scheme: light) {
+    .main-surface {
+        fill: #E9F1F8;
+        stroke: transparent;
+    }
+
+    .data-grid {
+        fill: #F1F6FB;
+        stroke: #DDE8F3;
+        horizontalLineStroke: #DDE8F3;
+        verticalLineStroke: #DDE8F3;
+        horizontalPadding: 4;
+        borderStyle: solid;
+    }
+
+    .data-grid-header {
+        stroke: #31557F;
+    }
+
+    .data-grid-column {
+        stroke: #2C435A;
+    }
+
+    .toolbar-button {
+        stroke: #5A8FCD
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .main-surface {
+        fill: #162535;
+        stroke: transparent;
+    }
+
+    .data-grid {
+        fill: #1e2d3d;
+        stroke: #2a3f58;
+        horizontalLineStroke: #2a3f58;
+        verticalLineStroke: #2a3f58;
+    }
+
+    .data-grid-header {
+        stroke: #7EB0D4;
+    }
+
+    .data-grid-column {
+        stroke: #B8D4E8;
+    }
+
+    .toolbar-button {
+        stroke: #93C1F6
+    }
+}

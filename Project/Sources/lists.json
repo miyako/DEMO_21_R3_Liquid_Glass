@@ -1,0 +1,32 @@
+{
+	"New List": {
+		"editable": false,
+		"items": [
+			{
+				"text": "New Item # 1",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "New Item # 2",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "New Item # 3",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "New Item # 4",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "New Item # 5",
+				"ref": 5,
+				"editable": true
+			}
+		]
+	}
+}

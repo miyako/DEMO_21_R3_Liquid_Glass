@@ -1,0 +1,132 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 83,
+	"events": [
+		"onLoad",
+		"onPrintingDetail"
+	],
+	"destination": "listPrinter",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 30,
+					"left": 0,
+					"width": 561,
+					"height": 53,
+					"stroke": "transparent",
+					"fill": "#F0F0F0"
+				},
+				"label_name": {
+					"type": "text",
+					"text": "Project",
+					"top": 7,
+					"left": 10,
+					"height": 16,
+					"width": 250,
+					"textAlign": "center"
+				},
+				"field_name": {
+					"type": "input",
+					"dataSource": "[Project:3]name:2",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none",
+					"fontWeight": "bold",
+					"fontSize": 14,
+					"fill": "transparent"
+				},
+				"label_manager": {
+					"type": "text",
+					"text": "Progress Tracking",
+					"top": 7,
+					"left": 270,
+					"height": 16,
+					"width": 150,
+					"textAlign": "center"
+				},
+				"field_manager": {
+					"type": "input",
+					"dataSource": "[Project:3]manager:3",
+					"top": 63,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none",
+					"fill": "transparent"
+				},
+				"field_status": {
+					"type": "input",
+					"dataSource": "[Project:3]status:4",
+					"top": 46,
+					"left": 270,
+					"width": 104,
+					"height": 17,
+					"borderStyle": "none",
+					"fill": "transparent"
+				},
+				"label_clientValidationRequired": {
+					"type": "text",
+					"text": "Validation",
+					"top": 7,
+					"left": 430,
+					"height": 16,
+					"width": 117,
+					"textAlign": "center"
+				},
+				"field_clientValidationRequired": {
+					"type": "checkbox",
+					"dataSource": "[Project:3]clientValidationRequired:6",
+					"dataSourceTypeHint": "boolean",
+					"text": "",
+					"top": 46,
+					"left": 484,
+					"width": 53,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"field_progress": {
+					"type": "input",
+					"dataSource": "[Project:3]progress:7",
+					"dataSourceTypeHint": "integer",
+					"top": 46,
+					"left": 381,
+					"width": 39,
+					"height": 17,
+					"borderStyle": "none",
+					"numberFormat": "##0%",
+					"fill": "transparent"
+				}
+			}
+		}
+	],
+	"geometryStamp": 138,
+	"markerFooter": 83,
+	"markerBreak": 83,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

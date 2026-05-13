@@ -1,0 +1,147 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 28,
+					"left": 0,
+					"width": 561,
+					"height": 21,
+					"stroke": "transparent",
+					"fill": "#F0F0F0"
+				},
+				"label_name": {
+					"type": "text",
+					"text": "Project",
+					"top": 7,
+					"left": 10,
+					"height": 16,
+					"width": 250,
+					"textAlign": "center"
+				},
+				"field_name": {
+					"type": "input",
+					"dataSource": "Form:C1466.name",
+					"top": 52,
+					"left": 20,
+					"width": 240,
+					"height": 17,
+					"borderStyle": "none",
+					"fill": "transparent"
+				},
+				"label_manager": {
+					"type": "text",
+					"text": "Tracking",
+					"top": 7,
+					"left": 270,
+					"height": 16,
+					"width": 150,
+					"textAlign": "center"
+				},
+				"field_status": {
+					"type": "input",
+					"dataSource": "Form:C1466.status",
+					"top": 52,
+					"left": 269,
+					"width": 110,
+					"height": 17,
+					"borderStyle": "none",
+					"fill": "transparent"
+				},
+				"label_clientValidationRequired": {
+					"type": "text",
+					"text": "Validation",
+					"top": 7,
+					"left": 430,
+					"height": 16,
+					"width": 117,
+					"textAlign": "center"
+				},
+				"field_clientValidationRequired": {
+					"type": "checkbox",
+					"dataSource": "Form:C1466.clientValidationRequired",
+					"dataSourceTypeHint": "boolean",
+					"text": "",
+					"top": 52,
+					"left": 485,
+					"width": 53,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"field_progress": {
+					"type": "input",
+					"dataSource": "Form:C1466.progress",
+					"dataSourceTypeHint": "integer",
+					"top": 52,
+					"left": 383,
+					"width": 37,
+					"height": 17,
+					"borderStyle": "none",
+					"numberFormat": "##0%",
+					"fill": "transparent"
+				},
+				"field_manager": {
+					"type": "input",
+					"dataSource": "Form:C1466.manager",
+					"top": 30,
+					"left": 5,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none",
+					"fill": "transparent"
+				}
+			}
+		}
+	],
+	"geometryStamp": 102,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"markerFooter": 97,
+	"markerBreak": 97,
+	"markerBody": 71,
+	"markerHeader": [
+		28,
+		50
+	]
+}

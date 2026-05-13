@@ -1,0 +1,7 @@
+
+FORM SET OUTPUT:C54([Project:3]; "ListPrintForm")
+
+SET PRINT PREVIEW:C364(True:C214)
+PRINT SELECTION:C60([Project:3])
+
+FORM SET OUTPUT:C54([Project:3]; "OutputForm")

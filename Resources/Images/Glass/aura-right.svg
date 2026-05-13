@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="210" viewBox="0 0 260 210">
+  <defs>
+    <radialGradient id="gLight" cx="58%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#f0e8ff" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#cfbdff" stop-opacity="0.62"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
+    </radialGradient>
+    <radialGradient id="gDark" cx="58%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#6a5aa0" stop-opacity="0.94"/>
+      <stop offset="55%" stop-color="#463879" stop-opacity="0.74"/>
+      <stop offset="100%" stop-color="#1b1530" stop-opacity="0.0"/>
+    </radialGradient>
+    <style>
+      .light { display: inline; }
+      .dark { display: none; }
+      @media (prefers-color-scheme: dark) {
+        .light { display: none; }
+        .dark { display: inline; }
+      }
+    </style>
+  </defs>
+
+  <ellipse class="light" cx="146" cy="98" rx="116" ry="96" fill="url(#gLight)"/>
+  <ellipse class="dark" cx="146" cy="98" rx="116" ry="96" fill="url(#gDark)"/>
+</svg>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="DEMO_21_R3_Liquid_Glass" uuid="DD8A42636C82454B86FC783AD3A33DD9" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Project" uuid="1E959B5B1A0D49D98A6E7682E97D90AD" id="3">
+		<field name="ID" uuid="39C5DBB78C704E1E8877F3ACF4224D29" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="46C7D7BF4081434BA7B9C72A0AAB8B9B" type="10" limiting_length="255" id="2"/>
+		<field name="manager" uuid="45D89034E35848B6BE39A1E00C824F1E" type="10" limiting_length="255" id="3"/>
+		<field name="status" uuid="9663B69B061C4F7D84310F6CB983750D" type="10" limiting_length="255" id="4"/>
+		<field name="notificationsEnabled" uuid="5287897951324F3A97C3B37279101918" type="1" id="5"/>
+		<field name="clientValidationRequired" uuid="5CCABDD8EEDA45BF88681AB3218FB915" type="1" id="6"/>
+		<field name="progress" uuid="F0CD912DB84E4C559C6280EA05E06AC5" type="4" id="7"/>
+		<field name="comments" uuid="798CFAA5A06C431285801DCDD244E0AB" type="10" id="8"/>
+		<primary_key field_name="ID" field_uuid="39C5DBB78C704E1E8877F3ACF4224D29"/>
+		<table_extra output_form="OutputForm" input_form="DetailForm"/>
+	</table>
+	<table name="Task" uuid="E009B5762F5C4D97B35C993D6A520BE7" id="4">
+		<field name="ID" uuid="BBFA038B4B4C445EB5EC458AFE7137B0" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="title" uuid="D66CE1760F4149E1A24751BECD5AB272" type="10" limiting_length="255" id="2"/>
+		<field name="status" uuid="9F9EF8BF4191471F84D16823234C2FFE" type="10" limiting_length="255" id="3"/>
+		<field name="assignee" uuid="62387A5BA7A342978D5FBEA170F0E919" type="10" limiting_length="255" id="4"/>
+		<field name="progress" uuid="03DA921A4BE64229BB8A04CEA4230669" type="4" id="5"/>
+		<field name="IDproject" uuid="B1EBFEBC2A3E4BECACB317C97838DA3A" type="4" id="6"/>
+		<primary_key field_name="ID" field_uuid="BBFA038B4B4C445EB5EC458AFE7137B0"/>
+	</table>
+	<relation uuid="B7A7F0E6CFBC44F2909D89D18EF414DF" name_Nto1="Project" name_1toN="Tasks" state="1">
+		<related_field kind="source">
+			<field_ref uuid="B1EBFEBC2A3E4BECACB317C97838DA3A" name="IDproject">
+				<table_ref uuid="E009B5762F5C4D97B35C993D6A520BE7" name="Task"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="39C5DBB78C704E1E8877F3ACF4224D29" name="ID">
+				<table_ref uuid="1E959B5B1A0D49D98A6E7682E97D90AD" name="Project"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="895E9CF0490D4937855A78296DECBA7D" type="7">
+		<field_ref uuid="BBFA038B4B4C445EB5EC458AFE7137B0" name="ID">
+			<table_ref uuid="E009B5762F5C4D97B35C993D6A520BE7" name="Task"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A109F14FF9DA4A7AA526823DE036B278" type="7">
+		<field_ref uuid="39C5DBB78C704E1E8877F3ACF4224D29" name="ID">
+			<table_ref uuid="1E959B5B1A0D49D98A6E7682E97D90AD" name="Project"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
