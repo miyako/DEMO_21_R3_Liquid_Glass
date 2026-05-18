@@ -4,7 +4,7 @@ Case of
 	: (Form event code:C388=On Printing Detail:K2:18)
 		
 		If (Undefined:C82(index))
-			index=0
+			index:=0
 		End if 
 		
 		If ((index%2)=1)

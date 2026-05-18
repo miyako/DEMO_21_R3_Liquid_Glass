@@ -1,3 +1,7 @@
+var $breakManager : Text
+var $es : cs:C1710.ProjectSelection
+var $e : cs:C1710.ProjectEntity
+
 SET PRINT PREVIEW:C364(True:C214)
 
 $breakManager:=""

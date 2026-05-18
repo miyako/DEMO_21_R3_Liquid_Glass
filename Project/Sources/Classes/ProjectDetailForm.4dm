@@ -7,6 +7,7 @@ property clientValidationRequired : Boolean
 property progress : Integer
 property comments : Text
 property tasks : cs:C1710.TaskSelection
+property myDrop : Object
 
 // Database and state properties
 property project : cs:C1710.ProjectEntity  // Reference to the database entity
@@ -21,7 +22,7 @@ Class constructor($obj : cs:C1710.ProjectEntity; $selectionSize : Integer)
 		This:C1470.isNew:=True:C214
 		This:C1470.name:=""
 		This:C1470.manager:=""
-		This:C1470.status:=""
+		This:C1470.status:="To Do"
 		This:C1470.notificationsEnabled:=False:C215
 		This:C1470.clientValidationRequired:=False:C215
 		This:C1470.progress:=0
@@ -36,6 +37,8 @@ Class constructor($obj : cs:C1710.ProjectEntity; $selectionSize : Integer)
 		This:C1470.maxIndex:=$selectionSize-1
 	End if 
 	
+	This:C1470.initDropDown()
+	
 Function loadEntity($entity : cs:C1710.ProjectEntity)
 	This:C1470.project:=$entity
 	This:C1470.name:=$entity.name
@@ -47,11 +50,39 @@ Function loadEntity($entity : cs:C1710.ProjectEntity)
 	This:C1470.comments:=$entity.comments
 	This:C1470.tasks:=This:C1470.project.Tasks
 	This:C1470.currentIndex:=$entity.indexOf()
+	This:C1470.syncDropDownFromStatus()
+	
+Function initDropDown
+	If (This:C1470.myDrop=Null:C1517)
+		This:C1470.myDrop:=New object:C1471
+		This:C1470.myDrop.values:=New collection:C1472("To Do"; "Pending"; "In Progress"; "Completed")
+	End if 
+	
+	This:C1470.syncDropDownFromStatus()
+	
+Function syncDropDownFromStatus
+	var $statusToUse : Text
+	
+	If (This:C1470.myDrop=Null:C1517)
+		return 
+	End if 
+	
+	$statusToUse:=This:C1470.status
+	If (($statusToUse="") | (This:C1470.myDrop.values.indexOf($statusToUse)=-1))
+		$statusToUse:="To Do"
+	End if 
+	
+	This:C1470.myDrop.currentValue:=$statusToUse
+	This:C1470.myDrop.index:=This:C1470.myDrop.values.indexOf($statusToUse)
 	
 Function save
 	If (This:C1470.project=Null:C1517)
 		// Creation
 		This:C1470.project:=ds:C1482.Project.new()
+	End if 
+	
+	If (This:C1470.myDrop#Null:C1517)
+		This:C1470.status:=This:C1470.myDrop.currentValue
 	End if 
 	
 	This:C1470.project.name:=This:C1470.name

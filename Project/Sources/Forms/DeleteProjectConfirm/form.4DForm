@@ -95,7 +95,7 @@
 					"height": 59,
 					"fontSize": 50,
 					"class": "data-grid-header",
-					"textAlign": "center"
+					"textAlign": "left"
 				}
 			}
 		}
