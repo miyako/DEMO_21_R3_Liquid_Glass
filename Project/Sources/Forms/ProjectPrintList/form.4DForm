@@ -43,7 +43,7 @@
 					"width": 561,
 					"height": 21,
 					"stroke": "transparent",
-					"fill": "#F0F0F0"
+					"fill": "automatic"
 				},
 				"label_name": {
 					"type": "text",
