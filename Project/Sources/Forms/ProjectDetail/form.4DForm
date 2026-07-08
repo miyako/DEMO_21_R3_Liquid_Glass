@@ -57,8 +57,7 @@
 					"class": "main-surface",
 					"bottom": 636,
 					"sizingX": "grow",
-					"sizingY": "grow",
-					"fill": "#162535"
+					"sizingY": "grow"
 				},
 				"bCancel": {
 					"type": "button",
@@ -246,7 +245,8 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.notificationsEnabled"
+					"dataSource": "Form:C1466.notificationsEnabled",
+					"class": ""
 				},
 				"Check Box1": {
 					"type": "checkbox",
@@ -258,7 +258,8 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.clientValidationRequired"
+					"dataSource": "Form:C1466.clientValidationRequired",
+					"class": ""
 				},
 				"Text3": {
 					"type": "text",
@@ -402,7 +403,7 @@
 			]
 		}
 	],
-	"geometryStamp": 279,
+	"geometryStamp": 291,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

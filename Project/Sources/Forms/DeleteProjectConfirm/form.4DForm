@@ -107,6 +107,5 @@
 		}
 	},
 	"rightMargin": 0,
-	"bottomMargin": 0,
-	"fluentUI": false
+	"bottomMargin": 0
 }

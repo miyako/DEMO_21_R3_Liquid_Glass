@@ -72,8 +72,7 @@
 					"bottom": 436,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"class": "main-surface",
-					"fill": "#162535"
+					"class": "main-surface"
 				},
 				"bAdd": {
 					"type": "button",

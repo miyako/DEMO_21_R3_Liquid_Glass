@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="2"/>
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
+	<com.4d>
+		<interface>
+			<user color_scheme="inherited" fluentUI="true"/>
+		</interface>
+	</com.4d>
+</preferences>
