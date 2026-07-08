@@ -57,7 +57,8 @@
 					"class": "main-surface",
 					"bottom": 636,
 					"sizingX": "grow",
-					"sizingY": "grow"
+					"sizingY": "grow",
+					"fill": "#162535"
 				},
 				"bCancel": {
 					"type": "button",

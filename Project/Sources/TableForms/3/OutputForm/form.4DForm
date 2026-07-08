@@ -58,6 +58,8 @@
 					"height": 147,
 					"class": "main-surface",
 					"bottom": 208,
+					"fill": "#162535",
+					"stroke": "transparent",
 					"sizingX": "grow",
 					"sizingY": "grow"
 				},

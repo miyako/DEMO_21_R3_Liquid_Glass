@@ -30,8 +30,8 @@
 					"left": 0,
 					"width": 561,
 					"height": 53,
-					"stroke": "transparent",
-					"fill": "#F0F0F0"
+					"fill": "#162535",
+					"stroke": "transparent"
 				},
 				"label_name": {
 					"type": "text",
