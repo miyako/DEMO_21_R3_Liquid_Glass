@@ -65,7 +65,7 @@
 				},
 				"bAdd": {
 					"type": "button",
-					"text": "􀅼",
+					"text": "",
 					"top": 15,
 					"left": 62,
 					"width": 38,
@@ -76,11 +76,12 @@
 					],
 					"fontSize": 16,
 					"class": "data-grid-header",
-					"method": "ObjectMethods/bAdd.4dm"
+					"method": "ObjectMethods/bAdd.4dm",
+					"icon": "/RESOURCES/Images/Material/add.svg"
 				},
 				"bDrop": {
 					"type": "button",
-					"text": "􀈑",
+					"text": "",
 					"top": 15,
 					"left": 104,
 					"width": 38,
@@ -91,11 +92,12 @@
 					],
 					"fontSize": 16,
 					"class": "data-grid-header",
-					"method": "ObjectMethods/bDrop.4dm"
+					"method": "ObjectMethods/bDrop.4dm",
+					"icon": "/RESOURCES/Images/Material/delete.svg"
 				},
 				"bPrint": {
 					"type": "button",
-					"text": "􀎛",
+					"text": "",
 					"top": 15,
 					"left": 500,
 					"width": 38,
@@ -107,11 +109,12 @@
 						"onClick"
 					],
 					"fontSize": 16,
-					"class": "data-grid-header"
+					"class": "data-grid-header",
+					"icon": "/RESOURCES/Images/Material/print.svg"
 				},
 				"bEdit": {
 					"type": "button",
-					"text": "􀈊",
+					"text": "",
 					"top": 15,
 					"left": 20,
 					"width": 38,
@@ -122,7 +125,8 @@
 					],
 					"fontSize": 16,
 					"class": "data-grid-header",
-					"method": "ObjectMethods/bEdit.4dm"
+					"method": "ObjectMethods/bEdit.4dm",
+					"icon": "/RESOURCES/Images/Material/edit.svg"
 				},
 				"SearchPicker": {
 					"type": "subform",
@@ -269,7 +273,7 @@
 			}
 		}
 	],
-	"geometryStamp": 835,
+	"geometryStamp": 839,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

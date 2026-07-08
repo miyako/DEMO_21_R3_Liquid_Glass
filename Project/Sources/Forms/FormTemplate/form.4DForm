@@ -77,7 +77,7 @@
 				},
 				"bAdd": {
 					"type": "button",
-					"text": "􀅼",
+					"text": "",
 					"top": 15,
 					"left": 68,
 					"width": 38,
@@ -87,11 +87,12 @@
 						"onClick"
 					],
 					"fontSize": 16,
-					"class": "data-grid-column"
+					"class": "data-grid-column",
+					"icon": "/RESOURCES/Images/Material/add.svg"
 				},
 				"bDrop": {
 					"type": "button",
-					"text": "􀈑",
+					"text": "",
 					"top": 15,
 					"left": 116,
 					"width": 38,
@@ -101,11 +102,13 @@
 						"onClick"
 					],
 					"fontSize": 16,
-					"class": "data-grid-column"
+					"class": "data-grid-column",
+					"icon": "/RESOURCES/Images/Material/delete.svg",
+					"iconFrames": 1
 				},
 				"bPrint": {
 					"type": "button",
-					"text": "􀎛",
+					"text": "",
 					"top": 15,
 					"left": 165,
 					"width": 38,
@@ -116,11 +119,12 @@
 						"onClick"
 					],
 					"fontSize": 14,
-					"class": "data-grid-column"
+					"class": "data-grid-column",
+					"icon": "/RESOURCES/Images/Material/print.svg"
 				},
 				"bEdit": {
 					"type": "button",
-					"text": "􀈊",
+					"text": "",
 					"top": 15,
 					"left": 20,
 					"width": 38,
@@ -130,11 +134,12 @@
 						"onClick"
 					],
 					"fontSize": 16,
-					"class": "data-grid-column"
+					"class": "data-grid-column",
+					"icon": "/RESOURCES/Images/Material/edit.svg"
 				},
 				"bCancel": {
 					"type": "button",
-					"text": "􀆄",
+					"text": "",
 					"top": 15,
 					"left": 252,
 					"width": 38,
@@ -144,11 +149,12 @@
 					"class": "data-grid-column",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/cancel.svg"
 				},
 				"bValidate": {
 					"type": "button",
-					"text": "􀆅",
+					"text": "",
 					"top": 15,
 					"left": 295,
 					"width": 38,
@@ -158,11 +164,12 @@
 					"class": "data-grid-column",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/ok.svg"
 				},
 				"bFirstRecord": {
 					"type": "button",
-					"text": "􀅁",
+					"text": "",
 					"top": 15,
 					"left": 380,
 					"width": 38,
@@ -172,11 +179,12 @@
 					"class": "data-grid-column",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/first.svg"
 				},
 				"bPreviousRecord": {
 					"type": "button",
-					"text": "􀆉",
+					"text": "",
 					"top": 15,
 					"left": 422,
 					"width": 38,
@@ -186,11 +194,12 @@
 					"class": "data-grid-column",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/back.svg"
 				},
 				"bNextRecord": {
 					"type": "button",
-					"text": "􀆊",
+					"text": "",
 					"top": 15,
 					"left": 465,
 					"width": 38,
@@ -200,11 +209,12 @@
 					"class": "data-grid-column",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/forward.svg"
 				},
 				"bLastRecord": {
 					"type": "button",
-					"text": "􀅂",
+					"text": "",
 					"top": 15,
 					"left": 508,
 					"width": 38,
@@ -214,12 +224,13 @@
 					"class": "data-grid-column",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/last.svg"
 				}
 			}
 		}
 	],
-	"geometryStamp": 249,
+	"geometryStamp": 259,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
