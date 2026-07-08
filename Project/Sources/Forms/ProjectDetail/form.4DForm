@@ -92,7 +92,7 @@
 				},
 				"bFirstRecord": {
 					"type": "button",
-					"text": "􀅁",
+					"text": "",
 					"top": 15,
 					"left": 120,
 					"width": 38,
@@ -103,11 +103,12 @@
 					"method": "ObjectMethods/bFirstRecord.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/first.svg"
 				},
 				"bPreviousRecord": {
 					"type": "button",
-					"text": "􀆉",
+					"text": "",
 					"top": 15,
 					"left": 162,
 					"width": 38,
@@ -118,11 +119,12 @@
 					"method": "ObjectMethods/bPreviousRecord.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/back.svg"
 				},
 				"bNextRecord": {
 					"type": "button",
-					"text": "􀆊",
+					"text": "",
 					"top": 15,
 					"left": 204,
 					"width": 38,
@@ -133,11 +135,12 @@
 					"method": "ObjectMethods/bNextRecord.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/forward.svg"
 				},
 				"bLastRecord": {
 					"type": "button",
-					"text": "􀅂",
+					"text": "",
 					"top": 15,
 					"left": 246,
 					"width": 38,
@@ -148,11 +151,12 @@
 					"method": "ObjectMethods/bLastRecord.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"icon": "/RESOURCES/Images/Material/last.svg"
 				},
 				"bPrint": {
 					"type": "button",
-					"text": "􀎛",
+					"text": "",
 					"top": 15,
 					"left": 508,
 					"width": 38,
@@ -164,7 +168,8 @@
 						"onClick"
 					],
 					"fontSize": 16,
-					"class": "data-grid-column"
+					"class": "data-grid-column",
+					"icon": "/RESOURCES/Images/Material/print.svg"
 				}
 			}
 		},
@@ -395,7 +400,7 @@
 			]
 		}
 	],
-	"geometryStamp": 272,
+	"geometryStamp": 277,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

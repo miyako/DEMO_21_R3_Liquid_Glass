@@ -86,21 +86,19 @@
 					"events": [],
 					"defaultButton": true
 				},
-				"Text": {
-					"type": "text",
-					"text": "􀈒",
-					"top": 20,
+				"Static Picture1": {
+					"type": "picture",
+					"top": 17,
 					"left": 20,
-					"width": 250,
-					"height": 59,
-					"fontSize": 50,
-					"class": "data-grid-header",
-					"textAlign": "left"
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Material/delete.svg",
+					"pictureFormat": "scaled"
 				}
 			}
 		}
 	],
-	"geometryStamp": 129,
+	"geometryStamp": 136,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
