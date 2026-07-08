@@ -178,6 +178,7 @@
 					"selectedItemsSource": "Form:C1466.selection",
 					"class": "data-grid",
 					"borderStyle": "solid",
+					"resizingMode": "legacy",
 					"columns": [
 						{
 							"header": {
