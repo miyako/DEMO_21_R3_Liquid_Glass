@@ -374,7 +374,7 @@
 					"left": 390,
 					"top": 101,
 					"width": 148,
-					"height": 20,
+					"height": 27,
 					"events": [
 						"onDataChange"
 					],
@@ -394,7 +394,7 @@
 			]
 		}
 	],
-	"geometryStamp": 268,
+	"geometryStamp": 272,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -69,7 +69,7 @@
 					"top": 195,
 					"left": 20,
 					"width": 115,
-					"height": 26,
+					"height": 27,
 					"style": "regular",
 					"action": "cancel",
 					"events": []
@@ -80,7 +80,7 @@
 					"top": 195,
 					"left": 155,
 					"width": 115,
-					"height": 26,
+					"height": 27,
 					"style": "regular",
 					"action": "accept",
 					"events": [],
@@ -100,7 +100,7 @@
 			}
 		}
 	],
-	"geometryStamp": 120,
+	"geometryStamp": 129,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
@@ -109,5 +109,6 @@
 		}
 	},
 	"rightMargin": 0,
-	"bottomMargin": 0
+	"bottomMargin": 0,
+	"fluentUI": false
 }
