@@ -281,6 +281,7 @@
 					"class": "data-grid",
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
 					"columns": [
 						{
 							"header": {
